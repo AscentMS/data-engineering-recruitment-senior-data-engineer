@@ -12,7 +12,7 @@ Your task is to develop a data pipeline that retrieves and integrates two datase
 
 Create a branch in this repository to hold your solution, and commit all your changes to the branch. When you're finished, submit a Pull Request; we will then review the solution in the follow-up interview. Feel free to add comments both in the code itself, and in the Pull Request, to clarify on any points you feel necessary.
 
-To make it easier for others to run your code, and to demonstrate code deployment principles,  please add your solution should to a container image.
+To make it easier for others to run your code and demonstrate code deployment principles,  please add your solution to a container image.
 
 Do not commit the processed data / credentials / etc. to source control; we expect you to demonstrate the process executing.
 ## Data Sources
