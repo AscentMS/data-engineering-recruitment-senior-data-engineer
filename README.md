@@ -1,3 +1,47 @@
+# Solution Implementation
+Overview
+This branch contains my implementation of the data engineering task. The solution:
+
+Parses the customer data from JSON format
+Anonymizes personally identifiable information (PII) using SHA-256 hashing
+Loads the data into a SQLite database
+Provides a SQL query to count users by local authority
+
+# Running the Solution
+Prerequisites
+
+Docker installed on your system
+
+# Steps to Run
+
+Clone this repository:
+# bash
+git clone [repository-url]
+git switch data-pipeline-implementation
+
+Ensure Data files are in the /data directory:
+
+data/users.json: Customer data file
+data/postcodes.csv: Postcode data file
+
+
+Build and run the Docker container:
+# bash
+docker build -t data-pipeline .
+docker run data-pipeline
+
+The output will show the count of users by local authority.
+
+Implementation Notes
+
+Customer data is anonymized using SHA-256 hashing to protect PII
+The SQL query is stored in a separate file (query.sql) for clarity
+The database schema includes:
+
+customers table: Anonymized customer data
+postcodes table: Postcode to local authority mapping
+users_by_authority view: For easier analysis
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Senior Data Engineer Interview Task 
 At Evergreen we deal with disparate sources of sensitive customer and geographical data across various departments, with examples ranging over structured, to semi-structured, to unstructured data. Our objective is to centralise these data sources into our relational data warehouse to extract valuable insights and facilitate data-driven decisions, whilst respecting the uniquely sensitive nature of health data.
 
