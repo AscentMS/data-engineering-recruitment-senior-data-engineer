@@ -17,7 +17,7 @@ Docker installed on your system
 Clone this repository:
 # bash
 git clone [repository-url]
-git switch data-pipeline-implementation
+git switch data-pipeline-solution
 
 Ensure Data files are in the /data directory:
 
