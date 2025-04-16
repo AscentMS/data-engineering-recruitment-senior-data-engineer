@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "data-engineering-recruitment-se"
+version = "0.1.0"
+description = "Data pipeline for integrating customer and postcode data into an SQLite database"
+authors = ["Yuri Aguirre <yuri.c.aguirre@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+packages = [{include = "src"}]
+keywords = ["data engineering", "pipeline", "sqlite", "docker"]
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.13"
+pandas = "^2.2.0"
+apache-airflow = "^2.9.0"
+charset-normalizer = "^3.3.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
